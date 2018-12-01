@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 27, 2017, 11:17:51 AM
+    Author     : Briet
+*/
+@import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans');
+
+/*Mobile First*/
+@media screen and (min-width: 320px){
+
+    h1,h2,h3 {
+        font-family: 'Baloo', cursive;
+        margin: 0;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    h2 {
+        font-size: 250%;
+    }
+
+    h3 { 
+        font-size: 200%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    main{
+        display: flex;
+        margin: auto 0;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    body {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 85%;
+        min-height: 100%;
+    }
+
+    #logout {
+        float: right;
+        padding-top: 20px;
+    }
+
+    /*INLINE LINKS*/
+    a:link {
+        color: #000000;
+        font-family: 'Baloo', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    /*NAVIGATION*/
+    nav {
+        width: 100%;
+        background-color: #de2226;
+    }
+    nav ul {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        list-style-type: none;
+        float: left;
+        font-family: 'Baloo', sans-serif;
+        font-size: 1em;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    nav a:hover {
+        background-color: #ffffff;
+        color: #de2226;
+    }
+
+    nav a:active {
+        background-color: #ffffff;
+        color: #de2226;
+    }
+
+    nav a:visited {
+        background-color: #de2226;
+        color: #000000;
+    }
+    /*MY ACCOUNT*/
+    #tools {
+        display: inline;
+    }
+    #tools::before {
+        content: url("/acme/images/site/account.gif");
+    }
+
+    header span{
+        margin-right: .5em;
+        font-size: smaller; 
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    html {
+        background-image: url("/acme/images/site/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    *, *:before, *:after{
+        box-sizing: inherit;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        background-color: #ffffff;
+        color: #000000; 
+        text-align: center;
+    }
+
+    hr {
+        background-color: #fff;
+        border-top: 4px dashed #de2226;
+    }
+
+    /*RECIPES*/
+
+    figure .image {
+        width: 100%;
+    }
+    .flexbox{
+        display: flex;
+    }
+
+    .recipes {
+        display: flex;
+    }
+
+    .flexrecipe {
+        width: 200px;
+        height: 80px;
+        margin: 10px;
+        display: flex;
+    }
+
+    .flexrecipe figure {
+        text-align: center;
+        display: table;
+        max-width: 30%; 
+        margin: 10px auto; 
+    }
+
+    .reviews {
+        flex: 1 0 0;
+        flex-wrap:  wrap;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+    }
+
+    /*HERO*/
+    .hero {
+        background-image: url("/acme/images/site/rocketfeature.jpg");
+        background-repeat: no-repeat;
+        color: #990033;
+        width:100%;
+        height: 500px;
+        margin: 0 auto;
+        position: relative; 
+
+    }
+
+    .acmerocket {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .acmerocket li {
+        list-style: none;
+        text-align: left;
+    }
+    #actionbtn {
+        margin: 10px 0px 0px 0px;
+    }
+
+    /*FORM FOR LOGIN AND REGISTRATION*/
+    .login { 
+        border: solid 3px #eee;
+        background-color: #F5F5F5;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+        .review-table { 
+        border: solid 3px #eee;
+        background-color: #F5F5F5;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .field-button {
+        margin-top: 6px;
+        border-radius: 5px;
+        color: #ffffff;
+        background: #de2226;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .field-button:hover {
+        color: #de2226;
+        background-color: white;
+    }
+    
+    #prod-display{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #prod-display li{
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+    }
+    #prod-display li img{
+        width: auto;
+        height: 200px;
+    }
+
+    #prod-detail{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #prod-detail li{
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+        float: right;
+        max-width: 50%;
+    }
+    #prod-detail li img{
+        width: 200px;
+        max-height: 200px;
+    }
+    
+    #image-display {
+        display: flex;
+        list-style-type: none;
+    }
+
+} /*} ENDS SCREEN SIZE SECTION*/
+
+/*  Tablets */
+@media only screen and (min-width : 768px) 
+{
+    .hero {
+        background-image: url("/acme/images/site/rocketfeature.jpg");
+        background-repeat: no-repeat;
+        color: #990033;
+        background-size:  cover;
+    }
+}
+
+/*Desktops*/ 
+@media only screen and (min-width : 992px) 
+{
+    .hero {
+        background-image: url("/acme/images/site/rocketfeature.jpg");
+        background-repeat: no-repeat;
+        color: #990033;
+        background-size:  cover;
+    }
+    .nav li {
+        list-style-type: none;
+        float: left;
+        font-family: 'Baloo', sans-serif;
+        font-size: 2em;
+    }
+
+    #prod-display{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    #prod-display li{
+        flex: 1 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #prod-detail {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #prod-detail li{
+        flex: 1 0 auto;
+        text-align: center;
+        border: 2px red;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+}
+
